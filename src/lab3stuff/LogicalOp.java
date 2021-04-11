@@ -331,7 +331,7 @@ public class LogicalOp {
         int panaAjungLa20 = 1;
         System.out.println(x);
         do {
-            System.out.println(fib);
+            System.out.println("numerele lui fibernaci sunt " + fib);
             fib = x + i;
             x = i;
             i = fib;
@@ -341,51 +341,49 @@ public class LogicalOp {
     }
 
 
-
     public void cozaLozaWoza() {
         int i = 1;
-            do {
-                if(i % 3 == 0) {
-                    if(i % 5 == 0) {
-                        if(i % 7 == 0)
-                            System.out.print("CozaLozaWoza ");
-                        else
-                            System.out.print("CozaLoza ");
-                    }
-                    else if(i % 7 == 0)
-                        System.out.print("CozaWoza ");
-                    else
-                        System.out.print("Coza ");
-                    if(i % 11 == 0)
-                        System.out.println();
-                }
-                else if(i % 5 == 0) {
-                    if(i % 7 == 0)
-                        System.out.print("LozaWoza ");
-                    else
-                        System.out.print("Loza ");
-                    if(i % 11 == 0)
-                        System.out.println();
-                }
-                else if(i % 7 == 0) {
-                    System.out.print("Woza ");
-                    if(i % 11 == 0)
-                        System.out.println();
-                }
-                else if(i % 11 == 0)
-                    System.out.println(i);
-                else
-                    System.out.print(i + " ");
+        int count = 0;
+        while (i <= 110) { if (count % 11 == 0) {
+                System.out.println(" ");
+            }
+
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+                System.out.println("CozaLozaWoza ");
+            }
+            else if (i % 5 == 0 && i % 7 == 0) {
+                System.out.println("WozaLoza ");
+            }
+            else if (i % 3 == 0 && i % 7 == 0) {
+                System.out.println("CozaWoza ");
+            }
+            else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("CozaLoza ");
+            }
+            else if (i % 7 == 0) {
+                System.out.println("Woza ");
+            }
+            else if (i % 5 == 0) {
+                System.out.println("Loza ");
+            }
+            else if (i % 3 == 0) {
+                System.out.println("Coza ");
+            }
+            else {
+                System.out.print(i + "  ");
+            }
 
 
+            count++;
+            i++;
 
-                i++;
-            } while(1<=110);
 
+        }
 
 
     }
 }
+
 
 
 

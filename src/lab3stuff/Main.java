@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         LogicalOp op = new LogicalOp();
 
-        int biggest = op.checkBiggerNumber(2, 3);
+       // int biggest = op.checkBiggerNumber(2, 3);
 
         // System.out.println("The bigger number is: " + biggest);
         // System.out.println(op.ex4("FastTrackIt"));
