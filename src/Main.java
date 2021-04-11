@@ -1,18 +1,44 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("hello" );
-        System.out.println("Antonio" );
-        System.out.println(2+5 );
-        System.out.println(10/5 );
-        System.out.println(-5 + 8 * 6 );
-        System.out.println((55+9) % 9 );
-        System.out.println(20 + -3*5/8);
-        System.out.println(5+15/3*2-8%3 );
-        System.out.println(   "j");
-        System.out.println(   "j");
-        System.out.println("j  j");
-        System.out.println( "jj");
+
+        int num = 1;
+
+        for(int i = num; i <= 110; i++) {
+            if(i % 3 == 0) {
+                if(i % 5 == 0) {
+                    if(i % 7 == 0)
+                        System.out.print("CozaLozaWoza ");
+                    else
+                        System.out.print("CozaLoza ");
+                }
+                else if(i % 7 == 0)
+                    System.out.print("CozaWoza ");
+                else
+                    System.out.print("Coza ");
+                if(i % 11 == 0)
+                    System.out.println();
+            }
+            else if(i % 5 == 0) {
+                if(i % 7 == 0)
+                    System.out.print("LozaWoza ");
+                else
+                    System.out.print("Loza ");
+                if(i % 11 == 0)
+                    System.out.println();
+            }
+            else if(i % 7 == 0) {
+                System.out.print("Woza ");
+                if(i % 11 == 0)
+                    System.out.println();
+            }
+            else if(i % 11 == 0)
+                System.out.println(i);
+            else
+                System.out.print(i + " ");
+        }
+
+    }
 
 }
-}
+
