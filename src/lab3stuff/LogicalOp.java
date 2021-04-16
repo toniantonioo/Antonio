@@ -344,33 +344,34 @@ public class LogicalOp {
     public void cozaLozaWoza() {
         int i = 1;
         int count = 0;
-        while (i <= 110) { if (count % 11 == 0) {
-                System.out.println(" ");
-            }
-
+        while (i <= 110) {
             if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
-                System.out.println("CozaLozaWoza ");
+                
+                System.out.print("CozaLozaWoza ");
             }
             else if (i % 5 == 0 && i % 7 == 0) {
-                System.out.println("WozaLoza ");
+                System.out.print("WozaLoza ");
             }
             else if (i % 3 == 0 && i % 7 == 0) {
-                System.out.println("CozaWoza ");
+                System.out.print("CozaWoza ");
             }
             else if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("CozaLoza ");
+                System.out.print("CozaLoza ");
             }
             else if (i % 7 == 0) {
-                System.out.println("Woza ");
+                System.out.print("Woza ");
             }
             else if (i % 5 == 0) {
-                System.out.println("Loza ");
+                System.out.print("Loza ");
             }
             else if (i % 3 == 0) {
-                System.out.println("Coza ");
+                System.out.print("Coza ");
             }
             else {
                 System.out.print(i + "  ");
+            }
+            if (count % 11 == 0) {
+                System.out.println(" ");
             }
 
 
